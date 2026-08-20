@@ -310,7 +310,7 @@ function Home() {
             <p className="moment-section__month" data-testid="text-date-month">11</p>
             <p className="moment-section__year" data-testid="text-date-year">2026</p>
             <p className="moment-section__caption">ننتظركم لنحتفل معاً بيومٍ سيبقى في القلب إلى الأبد</p>
-            <div className="date-seal" aria-hidden="true"><span className="date-seal__mark">D & A</span></div>
+            <div className="date-seal" aria-hidden="true"><span className="date-seal__mark">A & D</span></div>
           </Reveal>
         </section>
 
@@ -371,7 +371,7 @@ function Home() {
             <p className="closing-section__copy">شكراً لأنكم تجعلون أيامنا أكثر دفئاً، وذكرياتنا أجمل.</p>
           </Reveal>
           <div className="closing-section__footer">
-            <div className="closing-section__monogram" aria-hidden="true">D <Heart size={13} fill="currentColor" /> A</div>
+            <div className="closing-section__monogram" aria-hidden="true">A <Heart size={13} fill="currentColor" /> D</div>
             <p className="closing-section__thanks" data-testid="text-closing-thanks">مع محبتنا، أحمد وضحى</p>
             <p className="closing-section__date">13/11/2026</p>
             <ShareActions />
