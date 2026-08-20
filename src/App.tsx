@@ -85,7 +85,7 @@ function ShareActions() {
   const shareLink = async () => {
     if (navigator.share) {
       await navigator.share({
-        title: 'دعوة ضحى وأحمد',
+        title: 'دعوة أحمد وضحى',
         text: 'يسعدنا دعوتكم لمشاركتنا فرحتنا',
         url: invitationUrl,
       });
@@ -101,9 +101,9 @@ function ShareActions() {
       'BEGIN:VEVENT',
       'DTSTART:20261114T150000Z',
       'DTEND:20261114T190000Z',
-      'SUMMARY:زفاف ضحى وأحمد',
+      'SUMMARY: زفاف أحمد وضحى',
       'LOCATION:صالة مؤتة',
-      'DESCRIPTION:دعوة زفاف ضحى العكش وأحمد عاشور',
+      'DESCRIPTION:دعوة زفاف أحمد عاشور و ضحى العكش',
       'END:VEVENT',
       'END:VCALENDAR',
     ].join('\r\n');
@@ -236,7 +236,7 @@ function OpeningCurtain({ dismissed, onOpen }: { dismissed: boolean; onOpen: () 
           <Ornament />
           <p className="opening-card__intro">بسم الله الرحمن الرحيم<br />وبكل الحب والفرح</p>
           <div className="opening-card__names" data-testid="text-opening-couple">
-            ضحى العكش <span aria-hidden="true">&</span> أحمد عاشور
+            أحمد عاشور <span aria-hidden="true">&</span> ضحى العكش
           </div>
           <div className="opening-card__date" data-testid="text-opening-date">13/11/2026</div>
         </div>
@@ -277,9 +277,9 @@ function Home() {
           <div className="hero-section__topline reveal">دعوة زفاف</div>
           <div className="ornate-arch reveal reveal--delay-1" aria-hidden="true" />
           <h1 className="hero-section__title reveal reveal--delay-1" data-testid="text-couple-names">
-            ضحى العكش
-            <span className="hero-section__ampersand" aria-hidden="true">&</span>
             أحمد عاشور
+            <span className="hero-section__ampersand" aria-hidden="true">&</span>
+            ضحى العكش
           </h1>
           <div className="hero-section__date reveal reveal--delay-2" data-testid="text-event-date">13/11/2026</div>
           <p className="hero-section__note reveal reveal--delay-3" data-testid="text-hero-note">فصلٌ جديد يبدأ بحضوركم</p>
@@ -343,7 +343,6 @@ function Home() {
               </DetailRow>
             </div>
             <button type="button" className="countdown-button" onClick={showCountdown} data-testid="button-show-countdown">
-              <span>شاهد العدّاد حتى موعدنا</span>
               <ChevronDown size={17} />
             </button>
           </Reveal>
@@ -368,12 +367,12 @@ function Home() {
           <Botanical variant="lower-left" />
           <Reveal testId="reveal-closing">
             <p className="eyebrow">إلى آخر العمر</p>
-            <h2 className="closing-section__title">نحبكم أن تكونوا<br />جزءاً من فرحتنا</h2>
+            <h2 className="closing-section__title">  وجودكم<br />جزءاً من فرحتنا</h2>
             <p className="closing-section__copy">شكراً لأنكم تجعلون أيامنا أكثر دفئاً، وذكرياتنا أجمل.</p>
           </Reveal>
           <div className="closing-section__footer">
             <div className="closing-section__monogram" aria-hidden="true">D <Heart size={13} fill="currentColor" /> A</div>
-            <p className="closing-section__thanks" data-testid="text-closing-thanks">مع محبتنا، ضحى وأحمد</p>
+            <p className="closing-section__thanks" data-testid="text-closing-thanks">مع محبتنا، أحمد وضحى</p>
             <p className="closing-section__date">13/11/2026</p>
             <ShareActions />
           </div>
